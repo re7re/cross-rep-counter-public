@@ -24,7 +24,15 @@ Valid pull-ups - mobile
 
 https://github.com/user-attachments/assets/64a84227-b9dc-4190-b5f8-6fdbae83ffec
 
-(first version, without thumbs up)
+(pull-up counter in the first version, without thumbs up)
+
+
+Invalid pull-ups 
+
+
+https://github.com/user-attachments/assets/df1b7673-cca7-41f6-8ed1-f0a5fa915829
+
+
 
 Air squat - desktop version
 
