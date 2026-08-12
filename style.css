@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.layout {
+  min-height: 100vh;
+  padding: 16px 20px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 16px;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1;
+}
+
+.content {
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.8fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.video-side {
+  min-width: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.app {
+  position: relative;
+  width: min(100%, 820px);
+  aspect-ratio: 4 / 3;
+  max-height: calc(100vh - 140px);
+  background: #111;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+video,
+canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+video {
+  object-fit: cover;
+}
+
+canvas {
+  pointer-events: none;
+}
+
+.thumbs-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  font-size: 96px;
+  line-height: 1;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.6);
+  pointer-events: none;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.thumbs-up.visible {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.panel {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-self: start;
+}
+
+.exercise-label {
+  font-size: 18px;
+  color: #9a9a9a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.exercise-select {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 22px;
+  appearance: none;
+}
+
+.exercise-note {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #a9a9a9;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.14);
+  margin: 4px 0 2px;
+}
+
+.reps-card,
+.info-card {
+  background: #0e0e0e;
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.reps-label {
+  font-size: 24px;
+  color: #bdbdbd;
+  margin-bottom: 8px;
+}
+
+.reps-number {
+  font-size: 110px;
+  font-weight: 700;
+  line-height: 0.95;
+}
+
+.reps-sub {
+  margin-top: 6px;
+  font-size: 20px;
+  color: #8c8c8c;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info-key {
+  font-size: 20px;
+  color: #9f9f9f;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-val {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.info-status {
+  font-size: 28px;
+  line-height: 1.2;
+  color: #d8d8d8;
+}
+
+.bar-slider {
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    width: 100%;
+  }
+
+  .app {
+    width: 100%;
+    max-height: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .page-title {
+    font-size: 30px;
+  }
+
+  .content {
+    gap: 16px;
+  }
+
+  .app {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    max-height: 72vh;
+    border-radius: 14px;
+  }
+
+  .panel {
+    gap: 14px;
+  }
+
+  .exercise-select {
+    font-size: 18px;
+    padding: 12px 14px;
+  }
+
+  .exercise-note {
+    font-size: 14px;
+  }
+
+  .reps-card,
+  .info-card {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .reps-label {
+    font-size: 18px;
+  }
+
+  .reps-number {
+    font-size: 72px;
+  }
+
+  .reps-sub {
+    font-size: 16px;
+  }
+
+  .info-key {
+    font-size: 14px;
+  }
+
+  .info-val {
+    font-size: 28px;
+  }
+
+  .info-status {
+    font-size: 20px;
+  }
+
+  .thumbs-up {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 26px;
+  }
+
+  .app {
+    aspect-ratio: 9 / 16;
+    max-height: 70vh;
+  }
+
+  .exercise-select {
+    font-size: 16px;
+  }
+
+  .reps-number {
+    font-size: 60px;
+  }
+
+  .info-val {
+    font-size: 24px;
+  }
+
+  .info-status {
+    font-size: 18px;
+  }
+}

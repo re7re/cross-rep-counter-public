@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cross Rep Counter</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="layout">
+    <h1 class="page-title">Cross Rep Counter</h1>
+
+    <div class="content">
+      <div class="video-side">
+        <div class="app">
+          <video id="video" autoplay playsinline muted></video>
+          <canvas id="canvas"></canvas>
+
+          <div
+            id="thumbsUp"
+            class="thumbs-up"
+            aria-hidden="true"
+          >
+            👍
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="exercise-label">Exercise</div>
+
+        <select id="exerciseSelect" class="exercise-select">
+          <option value="squat" selected>Squat</option>
+          <option value="pullup">Pull-up</option>
+        </select>
+
+        <div class="exercise-note" id="exerciseNote">
+          Squat: count only valid squat repetitions.
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="reps-card">
+          <div class="reps-label">Valid reps</div>
+          <div class="reps-number" id="repCount">0</div>
+          <div class="reps-sub">Reps</div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-row">
+            <span class="info-key">State</span>
+            <span class="info-val" id="state">Waiting</span>
+          </div>
+
+          <div class="info-row">
+            <span class="info-key">Status</span>
+            <span class="info-status" id="status">Initializing</span>
+          </div>
+
+          <div
+            class="info-row"
+            id="barControlRow"
+            style="display: none;"
+          >
+            <span class="info-key">Bar (Y)</span>
+
+            <input
+              id="barHeight"
+              class="bar-slider"
+              type="range"
+              min="40"
+              max="300"
+              value="110"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
