@@ -10,21 +10,32 @@ Cross Rep Counter is an AI-powered product designed to simplify workout tracking
 > 🚧 This is a Proof of Concept (POC) with room for improvement in UI/UX, accuracy, performance, and exercise coverage.
 
 ## 📸 Demo
-Valid air squats 
+Valid air squats - mobile
 
 https://github.com/user-attachments/assets/050f600e-0087-4f53-83a7-5d5c47c2b089
 
-Invalid air squats
+Invalid air squats - mobile
 
 https://github.com/user-attachments/assets/d19402da-7f91-4727-b478-d57f13754184
 
-(the last movement classified correctly as rep - valid)
+(the last air squat classified correctly as rep - valid)
 
-Valid pull-ups
+Valid pull-ups - mobile
 
 https://github.com/user-attachments/assets/64a84227-b9dc-4190-b5f8-6fdbae83ffec
 
 (first version, without thumbs up)
+
+Air squat - desktop version
+
+
+
+https://github.com/user-attachments/assets/0744ab71-8ec9-4a88-95a5-b3b6c00a3ad9
+
+In the desktop version the user can see the status & state machine
+
+
+
 
 ## The Problem & Opportunity
 1. Athletes lack real-time validation: Beginners often struggle to identify whether their movements meet the standards required for a valid repetition.
