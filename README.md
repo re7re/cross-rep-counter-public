@@ -11,14 +11,19 @@ Cross Rep Counter is an AI-powered product designed to simplify workout tracking
 
 ## 📸 Demo
 Valid air squats 
+
 https://github.com/user-attachments/assets/050f600e-0087-4f53-83a7-5d5c47c2b089
 
 Invalid air squats
+
 https://github.com/user-attachments/assets/d19402da-7f91-4727-b478-d57f13754184
+
 (the last movement classified correctly as rep - valid)
 
 Valid pull-ups
+
 https://github.com/user-attachments/assets/64a84227-b9dc-4190-b5f8-6fdbae83ffec
+
 (first version, without thumbs up)
 
 ## The Problem & Opportunity
