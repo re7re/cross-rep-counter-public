@@ -103,6 +103,7 @@ Valid Rep Counter
 Building this product provided hands-on experience with:
 - AI-powered product development
 - Computer vision and pose estimation
+- Logic decisions impacts given ML model restrictions
 - Real-time inference
 - TensorFlow.js model integration
 - UX for AI-powered applications
