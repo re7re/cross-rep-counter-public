@@ -10,14 +10,16 @@ Cross Rep Counter is an AI-powered product designed to simplify workout tracking
 > 🚧 This is a Proof of Concept (POC) with room for improvement in UI/UX, accuracy, performance, and exercise coverage.
 
 ## 📸 Demo
-Valid Reps (Desktop) - Squat
-[https://github.com/user-attachments/assets/3235ccb0-5e1f-4127-bde9-9c35c49f0307](https://github.com/user-attachments/assets/3235ccb0-5e1f-4127-bde9-9c35c49f0307)
+Valid air squats 
+https://github.com/user-attachments/assets/050f600e-0087-4f53-83a7-5d5c47c2b089
 
-Valid Reps (Mobile) - Pull-ups
-[https://github.com/user-attachments/assets/70120bd3-e01f-45e6-80c1-eabcb16a1f6e](https://github.com/user-attachments/assets/70120bd3-e01f-45e6-80c1-eabcb16a1f6e)
+Invalid air squats
+https://github.com/user-attachments/assets/d19402da-7f91-4727-b478-d57f13754184
+(the last movement classified correctly as rep - valid)
 
-Invalid Reps (Mobile) - Pull-ups
-[https://github.com/user-attachments/assets/41c38a96-81cb-4bc3-b2f4-15d0d84bf71b](https://github.com/user-attachments/assets/41c38a96-81cb-4bc3-b2f4-15d0d84bf71b)
+Valid pull-ups
+https://github.com/user-attachments/assets/64a84227-b9dc-4190-b5f8-6fdbae83ffec
+(first version, without thumbs up)
 
 ## The Problem & Opportunity
 1. Athletes lack real-time validation: Beginners often struggle to identify whether their movements meet the standards required for a valid repetition.
